@@ -11,3 +11,5 @@
 ;; above commenting binding took over this useful function
 (global-set-key (kbd "M-d") 'dabbrev-expand)
 
+;; Old mark keybinding replaced by Quicksilver
+(global-set-key (kbd "M-<SPC>") 'set-mark-command)

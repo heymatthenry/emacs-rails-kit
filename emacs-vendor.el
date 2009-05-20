@@ -50,3 +50,10 @@
 ;; see: http://github.com/blog/180-local-github-config
 (require 'gist)
 
+;; Scala
+(load-lib-dir "vendor/scala-mode")
+(require 'scala-mode)
+(add-to-list 'auto-mode-alist '("\\.scala$" . scala-mode))
+(add-hook 'scala-mode-hook
+  '(lambda ()
+     (yas/minor-mode-on)))
